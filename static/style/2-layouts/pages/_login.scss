@@ -1,0 +1,25 @@
+.login-container{
+    position: absolute;
+    width: 480px;
+    background: #F7F9FF;
+    padding: 60px 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    .login-content {
+        .logo {
+            height: 60px;
+            display: block;
+            margin: 0 auto
+        }
+    }
+    .login-form{
+        .fields{
+            box-shadow: 0 2px 15px 0 rgba(98,149,255,0.2);
+        }
+    }
+    #sign-up{
+        display: none
+    }
+}

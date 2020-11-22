@@ -1,0 +1,47 @@
+/* TABLES */
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+.table__header-tb_sortable{
+	cursor: pointer;
+	svg {
+		margin-left: 10px;
+	}
+}
+
+.table__header-status{
+	text-align: center;
+}
+
+
+.response-status {
+display: none;
+}
+	
+.indicatr {
+	height: 18px;
+	width: 18px;
+	background: white;
+	border-radius: 50%;
+	display: block;
+	border: 1px solid $dark-border-color;
+	padding: 2px;
+	margin: 0 auto;
+	.responded{
+		height: 100%;
+		width: 100%;
+		background: #11C684;
+		border-radius: 50%;
+		display: block;
+	}
+	.unresponded{
+		height: 100%;
+		width: 100%;
+		background: rgb(198, 17, 17);
+		border-radius: 50%;
+		display: block;
+	}
+}

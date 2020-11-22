@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-family: $font__body;
+  font-size: 16px;
+  background: $bgLightBlue;
+}
+
+
+canvas { 
+  display: block; 
+
+} 
+
+
+/* ---- particles.js container ---- */ 
+#particles-js { 
+    width: 100%; 
+    height: 100%; 
+    background-color: #000018; 
+    background-position: 50% 50%; 
+}
+
+
+.card {
+  border: none;
+  position: relative;
+  margin-bottom: 30px;
+  background: $bgLightBlue;
+  .card__content-wrapper {
+    border-radius: 15px;	
+    background-color: #FDFFFC;
+    box-shadow: 0 2px 15px 0 rgba(98,149,255,0.2);
+    padding: 30px 30px 0 30px;
+    .card__header {
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(73,99,254,0.1);
+      h3 {
+        line-height: 30px;
+        margin: 0;
+      }
+      a, a:not([href]):not([tabindex]) {
+        margin: 0 0 0 auto;
+      }
+    }
+  }
+  &-gph-mtx {
+    position: relative;
+    .card__content-wrapper {
+      height: 0;
+      padding-bottom: 45%;
+      .maximize {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+      }
+    }
+  }
+}
+
+.plat-content {
+  height: 100%;
+  margin: 0;
+  .content {
+    padding-left: 300px;
+    padding-right: 40px;
+    padding-top: 80px;
+    width: 100%;
+    &.navbarToggled {
+     padding-left: 120px; 
+    }
+    .content__header {
+      .button {
+          display: inline-block;
+          margin: 0;
+          margin-left: auto;
+      }
+    }
+  }
+}
+
+.text-color {
+  &--blue{
+    color: $link;
+  }
+}
+
+
+
+
+@import "elements/elements";
+@import "typography/typography";
+@import "forms/forms";
+@import "page-header/header";
+@import "page-footer/footer";
+@import "navs/navs";
+
+
+

@@ -1,0 +1,40 @@
+.new-survey-name {
+    input{
+        font-size: 24px;
+        color: $link;
+        background: $bgLightBlue;
+        border: none;
+        border-bottom: 2px solid rgba(73,99,254,0.1);
+        margin-bottom: 40px; 
+        &:focus{
+            color:   $link;
+        }
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:   $link;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    $link;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    $link;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    $paragraph;
+    }
+    
+    :focus::-webkit-input-placeholder {
+        opacity: 0;
+    }
+    :focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       opacity:  0;
+    }
+    :focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+       opacity:  0;
+    }
+    :focus:-ms-input-placeholder { /* Internet Explorer 10-11 */
+       opacity:  0;
+    }
+}

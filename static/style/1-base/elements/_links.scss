@@ -1,0 +1,34 @@
+/* LINKS */
+
+a, a:not([href]):not([tabindex]) {
+	color: $link;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $link-active;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:hover,
+	&:active {
+		outline: none;
+	}
+}
+
+
+.dropdown-menu{
+	background: $vsBackground;
+	.dropdown-item{
+		padding: 15px 30px;
+	}
+	.dropdown-item:hover{
+		background: $link;
+		color: white;
+	}
+	.dropdown-item:active{
+		background: $link;
+	}
+}

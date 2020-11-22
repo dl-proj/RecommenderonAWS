@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static', filename = 'style.css')}}" />
+    
+</head>
+<body>
+  <div class="login-container d-flex justify-content-center align-items-center">
+    <div class="login-content">
+      <img class="logo" src=".{{url_for('static', filename = '/img/logo.svg')}}" alt="Re:config">
+      <form id="sign-up" class="login-form text-center" action="/reg" method="post">
+        <div class="fields">
+          <input type="text" id="email" name="username" placeholder="username">
+          <select name="age" class="selectpicker">
+            <option value="0">Age</option>
+            <option value="1">Under 18</option>
+            <option value="18">18-24</option>
+            <option value="25">25-34</option>
+            <option value="35">35-44</option>
+            <option value="45">45-49</option>
+            <option value="50">50-55</option>
+            <option value="56">56+</option>
+          </select>
+          <select name="gender" class="selectpicker">
+            <option value="0">Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+          <select name="occupation" class="selectpicker">
+            <option value="0">Occupation</option>
+            <option value="1">other or not specified</option>
+            <option value="2">academic/educator</option>
+            <option value="3">artist</option>
+            <option value="4">college/grad student</option>
+            <option value="5">customer service</option>
+            <option value="6">doctor/health care</option>
+            <option value="7">executive/managerial</option>
+            <option value="8">farmer</option>
+            <option value="9">homemaker</option>
+            <option value="10">K-12 student</option>
+            <option value="11">lawyer</option>
+            <option value="12">programmer</option>
+            <option value="13">retired</option>
+            <option value="14">sales/marketing</option>
+            <option value="15">scientist</option>
+            <option value="16">self-employed</option>
+            <option value="17">technician/engineer</option>
+            <option value="18">tradesman/craftsman</option>
+            <option value="19">unemployed</option>
+            <option value="20">writer</option>
+          </select>
+          <input type="password" id="signup-pass" name="password" placeholder="Password" minlength="8" required>
+        </div>
+        <p class="helper-text text-center mt-3 mb-4">Already have an account? <a onclick="logIn()">Login!</a></p>
+        <button type="submit" value="login">Sign Up
+          <svg width="18px" height="13px" viewBox="0 0 18 13">
+            <g class="button__icon button__icon-blue">
+              <path d="M12.1209908,0.195510794 C11.8757701,-0.0651702647 11.4676405,-0.0651702647 11.2138457,0.195510794 C10.968625,0.44738506 10.968625,0.866588384 11.2138457,1.11787553 L15.8135916,5.84242616 L0.635058749,5.84242616 C0.281232137,5.84301328 0,6.13187607 0,6.49530304 C0,6.85873002 0.281232137,7.15698672 0.635058749,7.15698672 L15.8135916,7.15698672 L11.2138457,11.8727306 C10.968625,12.1334116 10.968625,12.5532021 11.2138457,12.8044892 C11.4676405,13.0651703 11.8763417,13.0651703 12.1209908,12.8044892 L17.8096539,6.96147593 C18.0634487,6.70960166 18.0634487,6.29039834 17.8096539,6.03911119 L12.1209908,0.195510794 Z" id="Arrow"></path>
+            </g>
+        </svg></button>
+      </form>
+    </div>
+  </div>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../static/js/particles.js"></script>
+<script src="../static/js/functions.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html> 
